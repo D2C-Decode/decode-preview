@@ -1,0 +1,64 @@
+{
+  "name": "decode-preview",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "dev": "npm run serve",
+    "start": "sudo npm run dev",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "classnames": "^2.2.6",
+    "core-js": "^3.6.5",
+    "html2canvas": "^1.4.1",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
+    "qs": "^6.9.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-standard": "^5",
+    "@zyf2e/capui-mobile": "^1.0.3",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1",
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.7.1",
+    "eslint-plugin-html": "^6.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.2.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.5.3",
+    "postcss-pxtorem": "^5.1.1",
+    "prettier": "^1.19.1",
+    "prettier-eslint-cli": "^5.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^4.3.0"
+  },
+  "resolutions": {
+    "coa": "2.0.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "npm run lint"
+    ]
+  }
+}
